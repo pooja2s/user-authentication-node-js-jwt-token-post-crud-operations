@@ -25,17 +25,17 @@ you should be able to run JavaScript code using the `node` command in your termi
 
 Let's start by installing the required dependencies. Open your terminal or command prompt, navigate to your desired project directory, and run the following commands:
 
-npm init -y </s>
-npx express-generator </s>
-npm install express nodemon  </s>
-npm install mongodb  </s>
-npm install dotenv </s>
-npm install body-parser  </s>
-npm install cors  </s>
-npm install multer </s>
-npm i jsonwebtoken  </s>
-npm i bcryptjs  </s>
-npm i @hapi/joi </s>
+- npm init -y </s>
+- npx express-generator </s>
+- npm install express nodemon  </s>
+- npm install mongodb  </s>
+- npm install dotenv </s>
+- npm install body-parser  </s>
+- npm install cors  </s>
+- npm install multer </s>
+- npm i jsonwebtoken  </s>
+- npm i bcryptjs  </s>
+- npm i @hapi/joi </s>
 
 # Server Setup
 ## Create a new file called "app.js" in the root directory of your project folder javascript
@@ -128,10 +128,10 @@ To test API endpoints you can use Postman from https://www.getpostman.com . Just
 # ENV File
 Add .env file in the root directory and put all the credentials there.
 
-DB_CONNECTION = mongodb+srv://username:password@database.qr7ibbh.mongodb.net/ </s>
-PORT = 3001 </s>
-TOKEN_SECRET = dhkanfijvhznfsdjfhsdf </s>
-BASE_URL = http://localhost:3001 </s>
+- DB_CONNECTION = mongodb+srv://username:password@database.qr7ibbh.mongodb.net/ </s>
+- PORT = 3001 </s>
+- TOKEN_SECRET = dhkanfijvhznfsdjfhsdf </s>
+- BASE_URL = http://localhost:3001 </s>
 
 You will get the DB_CONNECTION URL while creating the database on https://www.mongodb.com/.
 
