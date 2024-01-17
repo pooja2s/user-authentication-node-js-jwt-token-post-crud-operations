@@ -106,8 +106,8 @@ In our project the file name is www. It is automatically created then we run npx
 
 
 # Credentials you can use for login:
-email : ritika@yopmail.com
-password : 123456789
+- email : ritika@yopmail.com
+- password : 123456789
 
 # Database collection
 The database is created with two table users and posts. You can add more data if needed.
@@ -118,8 +118,8 @@ To connect your node application to MongoDB using mongoose, first install it by 
 npm install mongodb --save `. Then follow these steps:
 - Create ".env" file in root folder.
 - Add the following code in your file (.env):
-DB_CONNECTION = mongodb+srv://username:password@nodejsapimongo.ppkierw.mongodb.net/
-TOKEN_SECRET = dhkanfijvhznfsdjfhsdf
+- DB_CONNECTION = mongodb+srv://username:password@nodejsapimongo.ppkierw.mongodb.net/
+- TOKEN_SECRET = dhkanfijvhznfsdjfhsdf
 
 # Postman
 To test API endpoints you can use Postman from https://www.getpostman.com . Just open Postman app and import "api.postman_collection.json". You will find the collection in the folder itself.</s>
