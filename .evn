@@ -1,0 +1,7 @@
+DB_CONNECTION = mongodb+srv://username:password@database.qr7ibbh.mongodb.net/
+PORT = 3001
+TOKEN_SECRET = dhkanfijvhznfsdjfhsdf
+BASE_URL = http://localhost:3001
+
+
+
