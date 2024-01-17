@@ -1,8 +1,7 @@
 Build A Restful Api With Node.js Express MongoDB Joi and JWT token authentication bcryptjs encryption Express-generator File Upload Using Multer | Rest Api Tutorial
-
 ===============================================================================
-This article will show you how to create a RESTful API with Node.js, Express framework, Express-generator, Joi and JWT token authentication, and image upload using the fs module and Multer.
 
+This article will show you how to create a RESTful API with Node.js, Express framework, Express-generator, Joi and JWT token authentication, and image upload using the fs module and Multer.
 
 This tutorial will teach you all CRUD operations i.e. user register and login with a JWT token. Once logged in, the user may add, update, and remove posts, as well as update all of them with post pictures. Also, the user can edit his profile and profile image.
 
