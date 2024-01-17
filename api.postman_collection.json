@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "2b9bb65f-47e0-4c90-b6da-ea6196c34625",
+		"name": "node-js-api-mongo-jwt-token-express-generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25161410",
+		"_collection_link": "https://universal-space-311851.postman.co/workspace/My-Workspace~98f71638-04c0-4c83-89c0-039d177c012d/collection/25161410-2b9bb65f-47e0-4c90-b6da-ea6196c34625?action=share&source=collection_link&creator=25161410"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ritika@yopmail.com\",\r\n    \"userName\":\"ritika\",\r\n    \"password\":\"123456789\",\r\n    \"phone\":\"999999999999\",\r\n    \"firstName\":\"ritika\",\r\n    \"lastName\":\"verma\",\r\n    \"address\":\"7835 new road\",\r\n    \"city\":\"xyz\",\r\n    \"state\":\"abc\",\r\n    \"country\":\"India\",\r\n    \"zipcode\":\"129263874\"            \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ritika@yopmail.com\",\r\n    \"password\":\"123456789\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"ritika\",\r\n    \"phone\":\"999999999999\",\r\n    \"firstName\":\"Ritika\",\r\n    \"lastName\":\"verma\",\r\n    \"address\":\"7835 new road\",\r\n    \"city\":\"xyz\",\r\n    \"state\":\"abc\",\r\n    \"country\":\"India\",\r\n    \"zipcode\":\"129263874\"            \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/update-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"update-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/change-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "sdsdfsdfsdfPost",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Eleventh Post description is here",
+							"type": "text"
+						},
+						{
+							"key": "postImage",
+							"type": "file",
+							"src": [
+								"/C:/Users/Pooja.Verma/Pictures/Dummy Data/icon  plain 2.png",
+								"/C:/Users/Pooja.Verma/Pictures/Dummy Data/icon  plain 4.png",
+								"/C:/Users/Pooja.Verma/Pictures/Dummy Data/icon  worst.png"
+							],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post Detail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/post/65a76b6b82eccf637fbbf941",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post",
+						"65a76b6b82eccf637fbbf941"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Tenth Post",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Tenth Post description is here",
+							"type": "text"
+						},
+						{
+							"key": "postImage",
+							"type": "file",
+							"src": "/C:/Users/Pooja.Verma/Pictures/Dummy Data/icon  plain 2.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/post/65a78cb46b3290c4c5898fdd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post",
+						"65a78cb46b3290c4c5898fdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/post/65a78cb46b3290c4c5898fdd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post",
+						"65a78cb46b3290c4c5898fdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userImage",
+							"type": "file",
+							"src": "/C:/Users/Pooja.Verma/Pictures/Dummy Data/men.png"
+						},
+						{
+							"key": "userImage",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/update-profile-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"update-profile-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post Image",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "{{nodeToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postImageName\":\"65a51d6dca06d0ceff2dbe96_Three-Imgs-Sample-1-image2.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/post/image/65a76b6b82eccf637fbbf941",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"post",
+						"image",
+						"65a76b6b82eccf637fbbf941"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "nodeToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWE1MWQ2ZGNhMDZkMGNlZmYyZGJlOTYiLCJpYXQiOjE3MDU0ODgxODUsImV4cCI6MTcwNTQ5MTc4NX0.fFzWCgBj5n3pv0F1YRG_qlbQWyhq_P9X6sTAalg4sDo",
+			"type": "string"
+		}
+	]
+}

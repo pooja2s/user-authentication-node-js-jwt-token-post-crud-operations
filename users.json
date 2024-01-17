@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "659e6bb08412250972d1fb41"
+  },
+  "email": "pooja@yopmail.com",
+  "role": "user",
+  "phone": "999999999999",
+  "firstName": "POOJA",
+  "lastName": "VERMA",
+  "address": "7835 new road",
+  "city": "xyz",
+  "state": "abc",
+  "country": "India",
+  "zipcode": "129263874",
+  "isActive": 1,
+  "createdAt": {
+    "$date": "2024-01-10T10:04:32.684Z"
+  },
+  "password": "$2a$10$Ei/GMEHzEFBXCLzBlh/UWOZhMuUPFzUiqFnvaTHAmnjaP1rbbf7Em",
+  "updatedAt": {
+    "$date": "2024-01-10T10:04:32.685Z"
+  },
+  "lastLogin": "",
+  "userName": "pooja",
+  "userImage": ""
+},
+{
+  "_id": {
+    "$oid": "65a5132b7c16e84ee586a00f"
+  },
+  "email": "vaibhav@yopmail.com",
+  "password": "$2a$10$KGCG2uXh7fQwJlIFIF8lxO8IGNi510vxHC5U7l7hPZrfYWuroHpkq",
+  "phone": "999999999999",
+  "firstName": "vaibhav",
+  "lastName": "verma",
+  "address": "7835 new road",
+  "city": "xyz",
+  "state": "abc",
+  "country": "India",
+  "zipcode": "129263874",
+  "role": "user",
+  "isActive": 0,
+  "createdAt": {
+    "$date": "2024-01-15T11:12:43.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T11:12:43.524Z"
+  },
+  "lastLogin": "",
+  "userName": "vaibhav",
+  "userImage": ""
+},
+{
+  "_id": {
+    "$oid": "65a51d6dca06d0ceff2dbe96"
+  },
+  "email": "ritika@yopmail.com",
+  "userName": "ritika",
+  "password": "$2a$10$1e8pCY/8zrKkZc39QTBMGOdnmy7VswkvrkRpfNxeEVYVj1zXzAIxC",
+  "phone": "999999999999",
+  "firstName": "Ritika",
+  "lastName": "verma",
+  "address": "7835 new road",
+  "city": "xyz",
+  "state": "abc",
+  "country": "India",
+  "zipcode": "129263874",
+  "role": "user",
+  "isActive": 0,
+  "createdAt": {
+    "$date": "2024-01-15T11:56:29.820Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T09:16:01.688Z"
+  },
+  "lastLogin": {
+    "$date": "2024-01-17T10:43:05.944Z"
+  },
+  "userImage": "1705482961687be96_men.png"
+}]
