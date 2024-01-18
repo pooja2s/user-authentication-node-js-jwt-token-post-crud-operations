@@ -21,19 +21,6 @@ const fileFilter = (req, file, cb) => {
     } else {
         cb(null, false);
     }
-    
-    // if (!file.originalname.match(/\.(jpg|jpeg|png)$/)) {
-    //     // Invalid file type error
-    //     return cb(new Error('Invalid file type. Only JPG, JPEG, and PNG files are allowed.'));
-    // }
-    
-    // if (file.size > 1024 * 1024 * 5) {
-    //     // File size exceeds the limit error
-    //     return cb(new Error('File size exceeds the limit of 5MB.'));
-    // }
-
-    // // Accept the file
-    // cb(null, true);
 };
 
 // Create a function that returns the dynamic upload middleware
