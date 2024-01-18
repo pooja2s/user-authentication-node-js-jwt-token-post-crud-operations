@@ -64,7 +64,7 @@ npm i jsonwebtoken --save
 npm install multer
 
 # Server Run
-npm start / nodemon start
+npm start
 
 
 # Routes Folder
