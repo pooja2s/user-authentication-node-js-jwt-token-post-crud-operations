@@ -128,8 +128,7 @@ const getAllPost = async (req, res, next) => {
         
         res.status(200).json({
             status: true,
-            message: postsData.length,
-            // message: 'Post data found!',
+            message: 'Post data found!',
             data: postsData,
         });
 
